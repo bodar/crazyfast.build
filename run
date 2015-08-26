@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+VERSION=2.193
+REPOSITORY=bodar/totallylazy
+DOWNLOAD_URL=https://codeload.github.com/${REPOSITORY}/tar.gz/${VERSION}
+
+curl -k "${DOWNLOAD_URL}" | tar -xz --strip 1 
+./jcompilo.sh
